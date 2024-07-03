@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Convert Money</title>
+</head>
+<body background="./assets/cifrao-fundo.jpeg">
+
+    <!-- <img src="../assets/logo.gif" alt="logo-gif" class="image-logo"> -->
+
+    
+
+    <main>
+            <label>
+                Converter <b>de</b>
+                <select class="option-option">
+                    <option value="rreal">R$ Real</option>
+                    <option value="ddolar">US$ Dólar</option>
+                    <option value="eeuro">€ Euro</option>
+                    <option value="llibra">£ libra</option>
+                </select>
+            </label>
+            <label>
+                Converter <b>para</b>
+                <select class="option-currency">
+                    <option value="real">R$ Real</option>
+                    <option value="dolar">US$ Dólar</option>
+                    <option value="euro">€ Euro</option> 
+                    <option value="libra">£ Libra</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input class="input-currency" placeholder="R$ 10.000,00">
+            </label>
+                <button class="button-convert">Converter</button>
+            <section>
+                <div class="currency-box">
+                    <img src="./assets/real.png" alt="real"  class="real-image">
+                    <p class="currency" id="first-name">Real</p>
+                    <p class="currency-value-to-convert" id="value-entered">R$ 0.00</p>
+                </div>
+                    <img src="./assets/arroww.png" alt="arroww" class="arrow" >
+                <div class="currency-box">
+                    <img class="currency-img" src="./assets/dolar.png" alt="dolar">
+                    <p class="currency" id="currency-name">Dólar</p>
+                    <p class="currency-value">US$ 00,000</p>
+                </div>
+
+            </section>
+
+        </main>
+        
+    
+    
+</body>
+</html>
