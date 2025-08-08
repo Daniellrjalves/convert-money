@@ -1,0 +1,118 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #3d2972;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* .logo {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+} */
+
+main {
+  width: 375px;
+  background: rgba(242, 242, 242, 0.8);
+  border-radius: 8px;
+
+  padding: 44px;
+}
+
+header {
+  font-size: 22px;
+}
+
+h1 {
+  color: #772fd3;
+  font-weight: bold;
+  font-size: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+label {
+  color: #777777;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+select,
+input {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 24px;
+  appearance: none; /*remover seta do select*/
+  padding-left: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  cursor: pointer;
+}
+
+button {
+  background: #772fd3;
+  border-radius: 3px;
+  width: 100%;
+  border: none;
+  height: 48px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+section {
+  border: 1px solid #772fd3;
+  border-radius: 8px;
+  margin-top: 36px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-img {
+  margin: 15px;
+}
+
+.currency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.currency {
+  color: #777777;
+  font-size: 14px;
+}
+
+.currency-value,
+.currency-value-to-convert {
+  color: #555555;
+  font-weight: 700;
+  font-size: 20px;
+}
