@@ -71,9 +71,14 @@ button {
   border: none;
   height: 48px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: clamp(
+    14px,
+    2vw,
+    18px
+  ); /* ajusta entre 14px e 18px conforme a tela */
   font-weight: 700;
   cursor: pointer;
+  padding: 0.5em 1em; /* proporcional */
 }
 
 button:hover {
@@ -87,32 +92,45 @@ button:active {
 section {
   border: 1px solid #772fd3;
   border-radius: 8px;
-  margin-top: 36px;
-  padding: 12px;
+  margin-top: 2rem; /* usa medida relativa */
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* nunca ultrapassa a tela */
+  max-width: 600px; /* limite máximo no desktop */
+  box-sizing: border-box;
 }
 
 .arrow-img {
-  margin: 15px;
+  margin: 1rem;
+  max-width: 80%; /* imagem nunca passa do limite */
+  height: auto;
 }
 
 .currency-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .currency {
   color: #777777;
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 14px);
 }
 
 .currency-value,
 .currency-value-to-convert {
   color: #555555;
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    display: grid;
+    margin: 30rem 3rem;
+    height: ;
+  }
 }
